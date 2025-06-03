@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Contact Us</h1>
+    <form id="contactForm" aria-label="Contact form" novalidate>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" aria-required="true" aria-describedby="nameError" tabindex="1" />
+      <span class="error" id="nameError" aria-live="polite"></span>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" aria-required="true" aria-describedby="emailError" tabindex="2" />
+      <span class="error" id="emailError" aria-live="polite"></span>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" aria-required="true" aria-describedby="messageError" tabindex="3"></textarea>
+      <span class="error" id="messageError" aria-live="polite"></span>
+
+      <button type="submit" tabindex="4">Submit</button>
+      <p class="success" id="successMsg" aria-live="polite"></p>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
